@@ -21,6 +21,25 @@ default:
     curiosity_strength: 0.01
     curiosity_enc_size: 128
 
+RatLearning:
+    batch_size: 10
+    buffer_size: 100
+    max_steps: 5.0e4
+
+BetterRatLearning:
+    max_steps: 5.0e4
+    batch_size: 1024
+    buffer_size: 10240
+    beta: 5.0e-3
+
+VillagerLearning:
+    max_steps: 1.0e5
+    batch_size: 1024
+    buffer_size: 10240
+    beta: 1.0e-4
+    learning_rate: 1.0e-3
+    num_layers: 3
+
 BananaLearning:
     normalize: false
     batch_size: 1024
